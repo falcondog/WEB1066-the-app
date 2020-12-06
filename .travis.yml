@@ -1,17 +1,16 @@
 language: java
 jdk: openjdk10
-     oraclejdk9
 env:
    - COVERAGE=0.35
 jobs:
   include:
     - stage: test
       script: ./gradlew -p ./monolithic/ui check
-      script: ./gradlew -p .monolithic/service/cart check
-      script: ./gradlew -p .monolithic/service/user check
-      script: ./gradlew -p .monolithic/repository/order check
-      script: ./gradlew -p .monolithic/repository/cart check
-      script: ./gradlew -p .monolithic/repository/product check
-      script: ./gradlew -p .monolithic/repository/user check
+      script: ./gradlew -p ./monolithic/service/cart check
+      script: ./gradlew -p ./monolithic/service/user check
+      script: ./gradlew -p ./monolithic/repository/order check
+      script: ./gradlew -p ./monolithic/repository/cart check
+      script: ./gradlew -p ./monolithic/repository/product check
+      script: ./gradlew -p ./monolithic/repository/user check
     - stage: deploy
       script: echo 'WIP'
