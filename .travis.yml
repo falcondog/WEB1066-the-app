@@ -12,5 +12,5 @@ jobs:
       script: .gradlew -p .monolithic/repository/cart check
       script: .gradlew -p .monolithic/repository/product check
       script: .gradlew -p .monolithic/repository/user check
-      - stage: deploy
-        script: echo 'WIP'
+    - stage: deploy
+      script: echo 'WIP'
