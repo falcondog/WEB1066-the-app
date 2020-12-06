@@ -3,8 +3,7 @@ jdk: openjdk10
 
 os: linux
 
-services:
-  - docker
+services: docker
 
 env:
   - COVERAGE=.10
